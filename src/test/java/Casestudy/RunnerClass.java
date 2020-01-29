@@ -7,13 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(
-		features="Feature",
-		glue= {"Casestudy"},
-		tags="@login"
-		)
+@CucumberOptions(features = "Feature", glue = { "Casestudy" }, tags = "@login", plugin = {"pretty","json:target/cucumber.json" })
 
-public class RunnerClass
-{
-	
+public class RunnerClass {
+
 }
